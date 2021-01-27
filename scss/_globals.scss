@@ -1,0 +1,183 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("../images/bg-desktop.svg");
+    background-color: $Violet;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: $poppins;
+}
+
+.logo{
+    width: 50%;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 80px
+}
+
+.content{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-bottom: 25px;
+}
+
+.mock {
+    width: 50%;
+}
+
+.text{
+    width: 520px;
+    margin-top: 50px;
+    margin-left: 60px;
+    color: white;
+}
+
+.text h1{
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.text p{
+    font-family: $opensans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.button{
+    width: 200px;
+    height: 60px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: $SoftMagenta;
+    background-color: white;
+    border-radius: 30px;
+    border-style: none;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 7px 25px -8px #000000;
+    box-shadow: 1px 7px 25px -8px #000000;
+}
+
+.button:hover{
+    color: white;
+    background-color: $SoftMagenta;
+}
+
+.reds{
+    float: right;
+    margin-right: 80px;
+}
+
+.reds a{
+    text-decoration: none;
+}
+
+.reds .iconp{
+    font-size: 15px;
+    padding: 15px;
+    margin-right: 10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+
+.reds .iconp:hover{
+    color: $SoftMagenta;
+    border: 1px solid $SoftMagenta;
+}
+
+.attribution {
+    margin-top: 50px;
+    font-size: 15px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px){
+    
+    body{
+        background: url("../images/bg-mobile.svg") no-repeat top;
+        background-color: $Violet;
+        background-size: contain;
+    }
+
+    .logo{
+        width: 50%;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .logo img{
+        height: 30px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    
+    .mock {
+        width: 90%;
+        position: relative;
+        margin-bottom: 25px;
+    }
+    
+    .text{
+        width: 95%;
+        margin-top: 0px;
+        margin-left: 0px;
+        color: white;
+        text-align: center;
+    }
+    
+    .text h1{
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 40px;
+    }
+    
+    .text p{
+        margin-top: 20px;
+        font-family: $opensans;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    
+    .button{
+        width: 60%;
+        height: 45px;
+        margin-top: 30px;
+        font-size: 15px;
+        color: $Violet;
+        background-color: white;
+        border-radius: 30px;
+        border-style: none;
+        cursor: pointer;
+        -webkit-box-shadow: 1px 7px 25px -8px #000000;
+        box-shadow: 1px 7px 25px -8px #000000;
+        margin-bottom: 50px;
+    }
+    .reds{
+        margin: auto;
+        margin-right: 25%;
+    }
+    .attribution {
+        margin-top: 60px;
+        font-size: 10px;
+        text-align: center;
+    }
+}
+	
